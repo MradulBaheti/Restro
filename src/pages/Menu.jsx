@@ -32,7 +32,7 @@ const customerData = useSelector((state) => state.customer);
                                 <MdRestaurantMenu  className='text-[#f5f5f5] text-4xl'/>
                                 <div className='flex flex-col items-start'>
                                     <h3 className='text-md text-[#f5f5f5] font-semibold'>{customerData.customerName || "Customer Name"}</h3>
-                                    <p  className='text-xs text-[#ababab] font-semibold'> {customerData.tableNo||"N/A"}</p>
+                                    <p  className='text-xs text-[#ababab] font-semibold'> Table:{customerData.table?.tableNo||"N/A"}</p>
                                 </div>
                             </div>
                 </div>
